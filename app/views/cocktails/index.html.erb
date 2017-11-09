@@ -3,7 +3,7 @@
 <ul>
   <% @cocktails.each do |cocktail| %>
 
-    <li><i class="fa fa-glass" aria-hidden="true"></i> <%= cocktail.name %></li>
+    <li><i class="fa fa-glass" aria-hidden="true"></i> <%= link_to cocktail.name, cocktail_path(cocktail) %></li>
 
   <% end %>
 </ul>
