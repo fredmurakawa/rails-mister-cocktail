@@ -6,4 +6,7 @@
     <li><i class="fa fa-glass" aria-hidden="true"></i> <%= link_to cocktail.name, cocktail_path(cocktail) %></li>
 
   <% end %>
+
 </ul>
+
+<%= link_to 'Add New Cocktail', new_cocktail_path, class: 'btn btn-primary' %>
