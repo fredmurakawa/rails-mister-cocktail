@@ -14,8 +14,3 @@ Ingredient.create(name: "pupunha")
 Ingredient.create(name: "watermellon")
 Ingredient.create(name: "herb")
 Ingredient.create(name: "marijuana")
-Ingredient.create(name: "orange")
-
-Cocktail.create(name: "Caipirinha")
-
-Dose.create(description: "10g", ingredient: Ingredient.first, cocktail: Cocktail.first)
