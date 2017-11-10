@@ -3,7 +3,12 @@
 <ul>
   <% @cocktails.each do |cocktail| %>
 
-    <li><i class="fa fa-glass" aria-hidden="true"></i> <%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+    <li>
+      <% cocktail.photos.each do |photo| %>
+        <%= cl_image_tag photo.path, width: 100, height: 100, gravity: "center", crop: "thumb" %>
+      <% end %>
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </li>
 
   <% end %>
 
